@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import '../res/text.json'
+
 
 class CContents extends Component {
 
@@ -12,8 +14,19 @@ class CContents extends Component {
     }
 
 render(){
+    // const items = [];
+    // for (let i=0; i<this.txtData().count; i++){
+    //     let value = this.txtData().text[i];
+    //     items.push(
+    //         <div className="contentsFlex">
+    //             <img className="contentsFlexImg" src={this.imgs['img' + (i+1)]} alt=""/>
+    //             <p className="contentsFlexTxt">{value}</p>
+    //         </div>
+    //     );
+    // }
     return (
-        <div>
+        <div className='conentsDivClass'>
+            {/* {items} */}
             <h1>{this.state.msg}</h1>
             <button onClick={()=>this.changeMsg()}>Kliknij,aby poznać tajemnicę</button>
         </div>
